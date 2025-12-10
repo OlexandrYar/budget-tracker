@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/form-validation.js"></script>
+    <title>Budget Tracker</title>
+</head>
+<div class="side-bar">
+    <h2>Menu</h2>
+    <hr>
+    <a href="index.html">Home</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="analytics.html">Analytics</a>
+</div>
+<body>
+    <h2>Add Transaction</h2>
+    <form action="addTransaction.html" class="transactionField" id="transactionField">
+        <label for="transactionName">Name of transaction</label>
+        <input type="text" name="transactionName" id="transactionName">
+        <label for="typeOfTransaction">Type of transaction</label>
+        <select name="typeOfTransaction" id="typeOfTransaction">
+            <option value="Food">Food</option>
+            <option value="Bill">Bill</option>
+            <option value="Salary">Salary</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Entertainment">Entertainment</option>
+        </select>
+        <label for="transactionDate">Date of transaction</label>
+        <input type="date" name="transactionDate" id="transactionDate" placeholder="Date of the transaction">
+        <label for="transactionAmmount">Ammount of transaction</label>
+        <input type="number" name="transactionAmmount" id="transactionAmmount">
+        <input type="submit" value="Add Transaction" id="addTransactionBtn">
+    </form>
+</body>
+<div class="bottom-bar">
+    <a href="index.html"><img src="images/home.png" alt="">Home</a>
+    <a href="transactions.html"><img src="images/transfer.png" alt="">Transactions</a>
+    <a href="analytics.html"><img src="images/chart.png" alt="">Analytics</a>
+</div>
+</html>
